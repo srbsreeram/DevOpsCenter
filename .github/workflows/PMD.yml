@@ -1,4 +1,4 @@
-name: Run Apex PMD
+name: Apex PMD
 
 on:
   pull_request:
@@ -31,4 +31,5 @@ jobs:
 
       - name: Run PMD
         run: |
-          ~/pmd-bin-6.29.0/bin/run.sh pmd -d src/classes -R config/ruleset.xml -f textcolor
+          ~/pmd-bin-6.29.0/bin/run.sh pmd -d src/classes -R src/config/ruleset.xml -f textcolor
+
