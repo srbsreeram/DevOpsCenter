@@ -1,0 +1,10 @@
+<!-- opportunityList.html -->
+<template>
+    <lightning-card title="Opportunity List">
+        <div class="slds-p-around_medium">
+            <lightning-input type="search" onchange={handleSearch} label="Filter by Name"
+                class="slds-m-bottom_small"></lightning-input>
+            <lightning-datatable data={opportunities} columns={columns} key-field="id"></lightning-datatable>
+        </div>
+    </lightning-card>
+</template>
