@@ -1,4 +1,4 @@
-name: Run Apex PMD
+name: Apex PMD
 
 on:
   pull_request:
