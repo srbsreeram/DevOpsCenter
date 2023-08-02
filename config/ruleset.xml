@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<ruleset name="Custom ruleset"
+  xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+  <description>
+    Custom ruleset for Salesforce Apex
+  </description>
+
+  <!-- Apex rules -->
+  <rule ref="category/apex/bestpractices.xml">
+    <exclude name="AvoidGlobalModifier"/> <!-- Modify as per your requirements -->
+  </rule>
+  <rule ref="category/apex/codestyle.xml"/>
+  <rule ref="category/apex/design.xml"/>
+  <rule ref="category/apex/errorprone.xml"/>
+  <rule ref="category/apex/multilingual.xml"/>
+  <rule ref="category/apex/performance.xml"/>
+  <rule ref="category/apex/security.xml"/>
+
+</ruleset>
